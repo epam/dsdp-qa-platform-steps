@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>platform-qa-steps</artifactId>
+        <groupId>platform.qa</groupId>
+        <version>1.6.0.208</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>data-factory-common-steps</artifactId>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <protocols-qa-client.version>0.1.0-SNAPSHOT</protocols-qa-client.version>
+        <ceph-qa-client.version>0.1.0-SNAPSHOT</ceph-qa-client.version>
+        <redis-qa-client.version>0.1.0-SNAPSHOT</redis-qa-client.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>protocols-qa-client</artifactId>
+            <version>${protocols-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>ceph-qa-client</artifactId>
+            <version>${ceph-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>redis-qa-client</artifactId>
+            <version>${redis-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- WireMock for HTTP endpoint mocking in integration tests -->
+        <dependency>
+            <groupId>org.wiremock</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>3.3.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+            <version>3.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <version>5.2.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

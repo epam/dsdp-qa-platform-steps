@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>platform-qa-steps</artifactId>
+        <groupId>platform.qa</groupId>
+        <version>1.6.0.208</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>operation-steps</artifactId>
+
+    <properties>
+        <jenkins-qa-client.version>0.1.0-SNAPSHOT</jenkins-qa-client.version>
+        <git-qa-client.version>0.1.0-SNAPSHOT</git-qa-client.version>
+        <keycloak-qa-client.version>0.1.0-SNAPSHOT</keycloak-qa-client.version>
+        <openshift-qa-client.version>0.1.0-SNAPSHOT</openshift-qa-client.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>git-qa-client</artifactId>
+            <version>${git-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>jenkins-qa-client</artifactId>
+            <version>${jenkins-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>openshift-qa-client</artifactId>
+            <version>${openshift-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>platform.qa</groupId>
+            <artifactId>keycloak-qa-client</artifactId>
+            <version>${keycloak-qa-client.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
